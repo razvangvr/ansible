@@ -6,6 +6,7 @@
 
   vars:
    home: /home/razvan
+   intellij_home: /opt/intellij
 
   tasks:
     - name: "install apt package mc"
@@ -16,8 +17,14 @@
     - name: "install apt package HTOP"
       apt: name=htop state=latest
 
+    - name: crate a directory for intellij location
+      become: yes
+      file:
+        path: "{{intellij_home}}"
+        state: directory
+
     - name: Unarchive a file that needs to be downloaded (added in 2.0)
       unarchive:
-        src: https://download.jetbrains.com/idea/ideaIE-2020.3.tar.gz
-        dest: "{{home}}/Downloads"
+        src: https://download.jetbrains.com/idea/ideaIU-2020.3.1.tar.gz
+        dest: "{{intellij_home}}/"
         remote_src: yes
