@@ -18,6 +18,6 @@
 
     - name: Unarchive a file that needs to be downloaded (added in 2.0)
       unarchive:
-        src: https://www.jetbrains.com/edu-products/download/download-thanks.html?platform=linux
+        src: https://download.jetbrains.com/idea/ideaIE-2020.3.tar.gz
         dest: "{{home}}/Downloads"
         remote_src: yes
