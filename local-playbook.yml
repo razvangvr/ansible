@@ -8,3 +8,6 @@
       apt:
         name: mc
         state: latest
+
+    - name: "install apt package HTOP"
+      apt: name=htop state=latest
