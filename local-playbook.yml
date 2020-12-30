@@ -1,5 +1,6 @@
 ---
 - name: "Playing with Ansible and Git"
+  home: /home/razvan
   hosts: localhost
   become: true # This means that all tasks will be executed with sudo
   connection: local
@@ -15,5 +16,5 @@
     - name: Unarchive a file that needs to be downloaded (added in 2.0)
       unarchive:
         src: https://www.jetbrains.com/edu-products/download/download-thanks.html?platform=linux
-        dest: ~/Downloads
+        dest: {{home}}/Downloads
         remote_src: yes
