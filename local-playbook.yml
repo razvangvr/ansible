@@ -1,7 +1,7 @@
 ---
 - name: "Playing with Ansible and Git"
   hosts: localhost
-  become: true
+  become: true # This means that all tasks will be executed with sudo
   connection: local
   tasks:
     - name: "install apt package mc"
@@ -11,3 +11,9 @@
 
     - name: "install apt package HTOP"
       apt: name=htop state=latest
+
+    - name: Unarchive a file that needs to be downloaded (added in 2.0)
+      unarchive:
+        src: https://www.jetbrains.com/edu-products/download/download-thanks.html?platform=linux
+        dest: ~/Downloads
+        remote_src: yes
