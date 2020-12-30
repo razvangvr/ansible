@@ -1,9 +1,12 @@
 ---
 - name: "Playing with Ansible and Git"
-  home: /home/razvan
   hosts: localhost
   become: true # This means that all tasks will be executed with sudo
   connection: local
+
+  vars:
+   home: /home/razvan
+
   tasks:
     - name: "install apt package mc"
       apt:
