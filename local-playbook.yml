@@ -1,7 +1,5 @@
 ---
 name: install and configure my developer machine, complete set-up with everything I need
-
-#HOST Declaration
 - hosts: localhost
   become: true
 # Action/Tasks Declaration
