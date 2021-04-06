@@ -6,4 +6,3 @@ repositories:
     key_url: https://download.docker.com/linux/ubuntu/gpg
 packages:
   - docker-ce
-  - parcellite

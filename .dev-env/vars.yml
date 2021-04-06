@@ -14,5 +14,7 @@ packages:
   - google-chrome-stable
   - sublime-text
   - mc
+  - parcellite
   - enpass
   - maven
+  - doublecmd-gtk
