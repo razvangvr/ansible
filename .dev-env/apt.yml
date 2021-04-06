@@ -1,5 +1,5 @@
 ---
-- include_vars: vars2.yml
+- include_vars: vars3.yml
 - name: Add apt signing keys
   become: yes
   apt_key: url={{ item.value.key_url }} state=present

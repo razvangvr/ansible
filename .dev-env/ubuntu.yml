@@ -2,4 +2,3 @@
 - hosts: localhost
   tasks:
     - include: apt.yml
-    - include: docker.yml
