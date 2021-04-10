@@ -5,4 +5,4 @@ sudo apt-get update
 sudo apt-get --assume-yes upgrade
 sudo apt-get --assume-yes install ansible
 
-ansible-playbook ubuntu.yml -i hosts -vv
+ansible-playbook ubuntu.yml -i hosts --ask-become-pass -vv

@@ -1,5 +1,5 @@
 ---
 - hosts: localhost
   tasks:
-#    - include: apt.yml
+    - include: apt.yml
     - include: deb-packages.yml
