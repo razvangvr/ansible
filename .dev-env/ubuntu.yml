@@ -3,3 +3,4 @@
   tasks:
     - include: apt.yml
     - include: deb-packages.yml
+    - include: docker_user_setup.yml

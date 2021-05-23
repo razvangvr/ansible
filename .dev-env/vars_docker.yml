@@ -1,8 +1,0 @@
-username: razvan
-home: /home/{{ username }}
-repositories:
-  docker:
-    repository: deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable
-    key_url: https://download.docker.com/linux/ubuntu/gpg
-packages:
-  - docker-ce

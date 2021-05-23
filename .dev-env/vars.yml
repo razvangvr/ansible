@@ -16,6 +16,9 @@ repositories:
   brave:
     repository: deb https://brave-browser-apt-release.s3.brave.com/ stable main
     key_url: https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
+  docker:
+    repository: deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable
+    key_url: https://download.docker.com/linux/ubuntu/gpg
 packages:
   - google-chrome-stable
   - sublime-text
@@ -26,3 +29,4 @@ packages:
   - doublecmd-gtk
   - vivaldi-stable
   - brave-browser
+  - docker-ce
